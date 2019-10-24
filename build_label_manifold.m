@@ -25,7 +25,7 @@ fprintf('Generate the labeling confidence...\n');
 M = sparse(p,p);
 fprintf('Obtain Hessian matrix...\n');
 WT = W';
-T =WT*W+ W*ones(p,p)*WT.*eye(p,p)-2*WT;
+T = 2*(eye(p)-W)'*(eye(p)-W);
 T1 = repmat({T},1,q);
 M = spblkdiag(T1{:});
 lb=sparse(p*q,1);
