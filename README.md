@@ -1,4 +1,4 @@
-The implemention of PL-AGGD (Adaptive graph guided disambiguation for partial label learning).
+The implementation of PL-AGGD (Adaptive graph guided disambiguation for partial label learning).
 MATLAB Commands:
 ```
 ker  = 'rbf'; %Type of kernel function
